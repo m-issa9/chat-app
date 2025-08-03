@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .models import Message
+from ..models.models import Message
 
 @api_view(['GET'])
 def message_list(request, user1, user2):
